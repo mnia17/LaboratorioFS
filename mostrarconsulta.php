@@ -68,7 +68,6 @@
               </tr>';
             }
         
-            /* free result set */
             $resultado->free();
 
         
@@ -77,12 +76,7 @@
         }
             
         echo '<a href="index.php" class="pulse" name="btnFormulario">Volver al formulario</a>';
-        //Dentro de un if-else ejecutamos la consulta guardada en la variable anterior.
-       /* if($conn->query($consultasql) === TRUE){
-            echo "Conectada a la bbdd y realiza consulta";
-        } else{
-        echo "Error: ". $consultasql . "<br>" .$conn->error;
-        }*/
+
     }else{
         echo '<script language="javascript">alert("Error al realizar la consulta");</script>';
         echo '<b>ERROR</b> <p>"No se ha podido realizar la consulta"</p>';
