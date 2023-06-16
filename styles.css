@@ -1,0 +1,121 @@
+/* @author Alessandra-Marie Bayot Diana 
+IDE: Visual Studio Code 1.79.0 */
+/* Base de la página */
+
+
+body{
+    background-color: #697c8a;
+    font-family: sans-serif;
+}
+
+/* FORMULARIO */
+
+fieldset{
+    background-color: #264d73;
+    max-width:300px;
+    margin: auto;
+    border-radius: 10px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    color:#538cc6;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.formulario_input{
+    height: 20px;
+    width: 200px;
+    border: 2px solid #00cc00;
+    background-image: url(images/success-icon.svg);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: center;
+
+}
+
+.formulario_input_error{
+    font-size: 14.5px;
+    color: red;
+}
+
+
+/* VALIDAR */
+.formulario_grupo_incorrecto.formulario_input{
+    border: 2px solid red;
+}
+
+input:required:invalid{
+    border: 2px solid red;
+    background-image: url(images/error-icon.svg);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: center;
+}
+
+/* Estilo para el boton */
+
+
+
+.pulse:hover,
+.pulse:focus {
+  -webkit-animation: pulse 1s;
+          animation: pulse 1s;
+  box-shadow: 0 0 0 2em rgba(255, 255, 255, 0);
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 var(--hover);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 var(--hover);
+  }
+}
+
+.raise:hover,
+.raise:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  -webkit-transform: translateY(-0.25em);
+          transform: translateY(-0.25em);
+}
+
+
+.pulse {
+  --color: #57d157;
+  --hover: #d3ef6e;
+}
+
+.raise {
+  --color: #e93c3c;
+  --hover: #e69ef0;
+}
+
+button {
+  color: var(--color);
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+button:hover, button:focus {
+  border-color: var(--hover);
+  color: #fff;
+}
+
+button {
+  background: none;
+  border: 2px solid;
+  font: inherit;
+  line-height: 1;
+  margin: 0.5em;
+  padding: 1em 2em;
+}
+
+h1 {
+  font-weight: 400;
+}
+
+code {
+  color: #e4cb58;
+  font: inherit;
+}
