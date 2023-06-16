@@ -5,7 +5,7 @@ IDE: Visual Studio Code 1.79.0 -->
 <html>
 <head>
     <meta charset="utf-8">
-    <title> TEEEST </title>
+    <title> Formulario de registro de usuario </title>
     <link href="styles.css" rel ="stylesheet" type="text/css">
     <script type="text/javascript" src="index.js"></script>
 </head>
